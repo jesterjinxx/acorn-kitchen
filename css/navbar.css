@@ -38,13 +38,13 @@
 
 .nav-links li:nth-child(2) a {
 
-  color: var(--cyan);
+  color: var(--paper);
 
 }
 
 .nav-links li:nth-child(3) a {
 
-  color: var(--pink);
+  color: var(--paper);
 
 }
 
