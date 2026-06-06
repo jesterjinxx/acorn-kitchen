@@ -85,3 +85,31 @@
     flex-wrap: wrap;
   }
 }
+@media (max-width: 650px) {
+  .site-header {
+    padding: 1rem 0;
+  }
+
+  .navbar {
+    gap: 1rem;
+  }
+
+  .logo {
+    width: min(230px, 80vw);
+  }
+
+  .nav-links {
+    width: 100%;
+    gap: 0.9rem;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+    letter-spacing: 0.06em;
+  }
+
+  .order-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

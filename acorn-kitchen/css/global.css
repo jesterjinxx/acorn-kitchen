@@ -132,3 +132,21 @@ p {
   background: var(--orange);
   color: var(--ink);
 }
+@media (max-width: 650px) {
+  h1 {
+    font-size: clamp(2.5rem, 13vw, 4rem);
+  }
+
+  h2 {
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+
+  .container {
+    width: min(100% - 1.25rem, var(--container));
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

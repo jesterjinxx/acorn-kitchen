@@ -159,3 +159,20 @@ h1 {
     max-width: none;
   }
 }
+@media (max-width: 650px) {
+  .category-card,
+  .chef-card,
+  .note-card,
+  .visit-card,
+  .hours-card,
+  .footer-card,
+  .menu-cta-card {
+    transform: none !important;
+    box-shadow: 5px 5px 0 var(--orange);
+  }
+
+  .hours-list li {
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+}
