@@ -1,0 +1,134 @@
+@import url("./variables.css");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(216, 78, 159, 0.28), transparent 18rem),
+    radial-gradient(circle at 85% 15%, rgba(57, 199, 201, 0.22), transparent 20rem),
+    radial-gradient(circle at 70% 80%, rgba(223, 123, 53, 0.18), transparent 24rem),
+    linear-gradient(135deg, var(--bg), var(--bg-deep));
+  color: var(--cream-ink);
+  font-family: var(--body-font);
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  font: inherit;
+}
+
+.container {
+  width: min(var(--container), calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: var(--heading-font);
+  line-height: 0.98;
+}
+
+h1 {
+  font-size: clamp(3rem, 6vw, 5.8rem);
+}
+
+h2 {
+  font-size: clamp(2.2rem, 4vw, 4rem);
+}
+
+p {
+  margin: 0;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 0.85rem 1.1rem;
+  border: var(--border);
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  box-shadow: 4px 4px 0 var(--ink);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.btn:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--ink);
+}
+
+.btn-dark {
+  background: var(--orange);
+  color: var(--ink);
+}
+
+.btn-paper {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.stamp {
+  display: inline-block;
+  width: fit-content;
+
+  margin-bottom: 1rem;
+  padding: 0.35rem 0.65rem;
+
+  background: var(--orange);
+  color: var(--ink);
+
+  border: var(--stamp-border);
+
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.25);
+
+  font-size: 0.72rem;
+  font-weight: 900;
+
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+
+  transform: rotate(-1.5deg);
+}
+
+.stamp-light {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+::selection {
+  background: var(--orange);
+  color: var(--ink);
+}

@@ -1,0 +1,92 @@
+.about-hero {
+  padding: 5rem 0;
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 3rem;
+  align-items: center;
+}
+h1 {
+    font-size: 4rem;
+}
+.about-copy p:not(.stamp) {
+  max-width: 620px;
+  margin-top: 1.5rem;
+  color: var(--paper);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.chef-card,
+.note-card {
+  background: var(--paper);
+  color: var(--ink);
+  border: var(--border);
+}
+
+.chef-card {
+  padding: 1.5rem;
+  box-shadow: 8px 8px 0 var(--pink);
+  transform: rotate(1deg);
+}
+
+.chef-photo {
+  display: grid;
+  place-items: center;
+  min-height: 360px;
+  margin-bottom: 1.5rem;
+  border: 2px dashed rgba(16, 16, 16, 0.35);
+  background:
+    linear-gradient(135deg, rgba(223, 123, 53, 0.18), transparent),
+    var(--white);
+}
+
+.chef-photo span {
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.chef-card h2,
+.note-card h2 {
+  margin-bottom: 1rem;
+}
+
+.chef-card p,
+.note-card p {
+  line-height: 1.7;
+}
+
+.about-notes {
+  padding: 3rem 0 6rem;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.note-card {
+  padding: 1.5rem;
+  box-shadow: 6px 6px 0 var(--cyan);
+}
+
+.note-card:nth-child(2) {
+  box-shadow: 6px 6px 0 var(--orange);
+  transform: rotate(-1deg);
+}
+
+@media (max-width: 900px) {
+  .about-layout,
+  .notes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chef-card,
+  .note-card {
+    transform: none !important;
+  }
+}

@@ -1,0 +1,26 @@
+:root {
+  --bg: #15172b;
+  --bg-deep: #0e1020;
+
+  --paper: #f4ead2;
+  --paper-dark: #dbcaa6;
+
+  --ink: #101010;
+  --cream-ink: #f7edd8;
+
+  --brown: #7a3b18;
+  --olive: #9b9a4a;
+  --orange: #df7b35;
+  --pink: #d84e9f;
+  --cyan: #39c7c9;
+
+  --white: #fff8e8;
+
+  --container: 1180px;
+
+  --heading-font: "Sora", sans-serif;
+--body-font: "Sora", sans-serif;
+
+  --border: 2px solid var(--ink);
+  --stamp-border: 1px solid rgba(16,16,16,.35);
+}

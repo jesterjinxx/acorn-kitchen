@@ -1,0 +1,80 @@
+.site-footer {
+  padding: 5rem 0;
+  border-top: 2px solid rgba(247, 237, 216, 0.25);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 1fr;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.footer-brand {
+  padding: 2rem;
+}
+
+.footer-brand img {
+  width: 280px;
+  margin-bottom: 1.5rem;
+  filter: brightness(0) invert(1);
+}
+
+.footer-brand p {
+  max-width: 34ch;
+  color: var(--paper);
+  line-height: 1.7;
+}
+
+.footer-card {
+  padding: 1.5rem;
+  background: var(--paper);
+  color: var(--ink);
+  border: var(--border);
+  box-shadow: 6px 6px 0 var(--orange);
+}
+
+.footer-card:nth-child(2) {
+  transform: rotate(-1deg);
+}
+
+.footer-card:nth-child(3) {
+  transform: rotate(1deg);
+  box-shadow: 6px 6px 0 var(--cyan);
+}
+
+.hours-list {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.hours-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px dashed rgba(16, 16, 16, 0.25);
+  padding-bottom: 0.45rem;
+  font-weight: 700;
+}
+
+.footer-card p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.footer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-card {
+    transform: none !important;
+  }
+}

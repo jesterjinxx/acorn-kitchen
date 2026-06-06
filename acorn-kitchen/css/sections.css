@@ -1,0 +1,147 @@
+.field-notes {
+  padding: 5rem 0;
+}
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.research-card,
+.visit-box,
+.photo-note {
+  background: var(--paper);
+  color: var(--ink);
+  border: var(--border);
+}
+
+.research-card {
+  padding: 1.5rem;
+  box-shadow: 6px 6px 0 var(--cyan);
+}
+
+.research-card:nth-child(1) {
+  transform: rotate(-1deg);
+}
+
+.research-card:nth-child(2) {
+  transform: rotate(1deg);
+}
+
+.research-card:nth-child(3) {
+  transform: rotate(-0.5deg);
+}
+
+.research-card:nth-child(4) {
+  transform: rotate(1deg);
+}
+
+.card-number {
+  margin-bottom: 0.75rem;
+  color: var(--pink);
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.research-card h2 {
+  margin-bottom: 0.75rem;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+}
+
+.research-card p:last-child {
+  line-height: 1.7;
+}
+
+.experiment-log {
+  padding: 6rem 0;
+  border-top: 2px solid rgba(247, 237, 216, 0.3);
+  border-bottom: 2px solid rgba(247, 237, 216, 0.3);
+}
+
+.split-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.split-section p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.field-note {
+  padding: 6rem 0;
+}
+
+.field-note .container {
+  max-width: 850px;
+}
+
+.field-note h2 {
+  margin-bottom: 1rem;
+}
+
+.field-note p {
+  color: var(--paper);
+  line-height: 1.8;
+}
+
+.visit {
+  padding: 6rem 0;
+}
+
+.visit-box {
+  padding: 2.5rem;
+  box-shadow: 8px 8px 0 var(--orange);
+}
+
+.visit h2 {
+  margin-bottom: 1rem;
+}
+
+.visit p {
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+.feed-section {
+  padding: 6rem 0;
+  border-top: 2px solid rgba(247, 237, 216, 0.25);
+  border-bottom: 2px solid rgba(247, 237, 216, 0.25);
+}
+
+.facebook-frame {
+  width: min(500px, 100%);
+  padding: 1rem;
+  background: var(--paper);
+  border: var(--border);
+  box-shadow: 8px 8px 0 var(--cyan);
+  transform: rotate(-1deg);
+}
+
+.facebook-frame iframe {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  background: white;
+}
+@media (max-width: 900px) {
+  .research-grid,
+  .split-section {
+    grid-template-columns: 1fr;
+  }
+
+  .research-card {
+    transform: none !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .visit-box {
+    padding: 1.5rem;
+  }
+}

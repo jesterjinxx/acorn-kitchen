@@ -1,0 +1,82 @@
+.visit-hero {
+  padding: 5rem 0;
+}
+
+.visit-layout {
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.visit-intro {
+  max-width: 620px;
+  margin: 1.5rem 0 2rem;
+  color: var(--paper);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.visit-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.visit-card,
+.hours-card {
+  background: var(--paper);
+  color: var(--ink);
+  border: var(--border);
+  box-shadow: 8px 8px 0 var(--orange);
+}
+
+.visit-card {
+  padding: 2rem;
+  transform: rotate(1deg);
+}
+
+.visit-card h2 {
+  margin-bottom: 1rem;
+}
+
+.visit-card p {
+  margin-bottom: 1.25rem;
+  line-height: 1.7;
+}
+
+.hours-section {
+  padding: 3rem 0 6rem;
+}
+
+.hours-card {
+  max-width: 760px;
+  padding: 2rem;
+  box-shadow: 8px 8px 0 var(--cyan);
+  transform: rotate(-1deg);
+}
+
+.hours-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.hours-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed rgba(16, 16, 16, 0.3);
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .visit-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .visit-card,
+  .hours-card {
+    transform: none;
+  }
+}
