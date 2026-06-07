@@ -82,11 +82,36 @@
   }
 
   .logo {
-    width: 220px;
+    width: min(230px, 80vw);
+    margin: 0 auto;
   }
 
   .nav-links {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1.25rem;
+
     flex-wrap: wrap;
+  }
+
+  .nav-links li {
+    display: flex;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+    letter-spacing: 0.06em;
+  }
+
+  .order-btn {
+    width: min(180px, 100%);
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
   }
 }
 @media (max-width: 650px) {
