@@ -128,7 +128,7 @@ h1 {
   }
   .video-card {
     grid-template-columns: 1fr;
-    box-shadow: 6px 6px 0 var(--pink);
+
   }
 }
 @media (max-width: 650px) {
@@ -152,7 +152,6 @@ h1 {
 
   .video-card {
     padding: 1.15rem;
-    box-shadow: 5px 5px 0 var(--pink);
   }
 
   .video-copy h2 {
