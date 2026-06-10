@@ -12,6 +12,7 @@
 .logo {
   display: block;
   width: 260px;
+  padding-left: 1rem;
 }
 
 .logo img {

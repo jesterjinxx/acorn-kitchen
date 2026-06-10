@@ -18,12 +18,14 @@
   width: 280px;
   margin-bottom: 1.5rem;
   filter: brightness(0) invert(1);
+  margin: 0 auto;
 }
 
 .footer-brand p {
   max-width: 34ch;
   color: var(--paper);
   line-height: 1.7;
+  text-align: center;
 }
 
 .footer-card {
@@ -72,6 +74,18 @@
 @media (max-width: 900px) {
   .footer-grid {
     grid-template-columns: 1fr;
+  }
+
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-brand p {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .footer-card {

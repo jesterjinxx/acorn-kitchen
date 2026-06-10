@@ -24,6 +24,7 @@ h1 {
   background: var(--paper);
   color: var(--ink);
   border: var(--border);
+  margin-right: 20px;
 }
 
 .chef-card {
@@ -78,7 +79,42 @@ h1 {
   box-shadow: 6px 6px 0 var(--orange);
   transform: rotate(-1deg);
 }
+.about-video {
+  padding: 0 0 6rem;
+}
 
+.video-card {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.video-frame {
+  max-width: 340px;
+  margin: 0 auto;
+  padding: 0.75rem;
+  background: var(--paper);
+  border: var(--border);
+  box-shadow: 8px 8px 0 var(--orange);
+  transform: rotate(-1deg);
+}
+
+.video-frame video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+}
+
+.video-copy h2 {
+  margin-bottom: 1rem;
+}
+
+.video-copy p {
+  max-width: 55ch;
+  line-height: 1.8;
+}
 @media (max-width: 900px) {
   .about-layout,
   .notes-grid {
@@ -88,6 +124,11 @@ h1 {
   .chef-card,
   .note-card {
     transform: none !important;
+    padding: 1.15rem;
+  }
+  .video-card {
+    grid-template-columns: 1fr;
+    box-shadow: 6px 6px 0 var(--pink);
   }
 }
 @media (max-width: 650px) {
@@ -99,7 +140,95 @@ h1 {
   .footer-card,
   .menu-cta-card {
     transform: none !important;
-    box-shadow: 5px 5px 0 var(--orange);
+  }
+
+  .hours-list li {
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+  .about-video {
+    padding: 0 0 4rem;
+  }
+
+  .video-card {
+    padding: 1.15rem;
+    box-shadow: 5px 5px 0 var(--pink);
+  }
+
+  .video-copy h2 {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 900px) {
+  .about-hero {
+    padding: 4rem 0 3rem;
+  }
+
+  .about-layout {
+    gap: 2.25rem;
+  }
+
+  h1 {
+    font-size: clamp(2.6rem, 8vw, 4rem);
+    line-height: 0.95;
+  }
+
+  .about-copy p:not(.stamp) {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .about-hero {
+    padding: 3rem 0 2rem;
+  }
+
+  .about-layout {
+    gap: 2rem;
+  }
+
+  h1 {
+    font-size: clamp(2.35rem, 13vw, 3.25rem);
+    line-height: 0.95;
+  }
+
+  .about-copy p:not(.stamp) {
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .chef-card,
+  .note-card {
+    padding: 1.15rem;
+  }
+
+  .chef-photo {
+    min-height: 240px;
+    margin-bottom: 1rem;
+  }
+
+  .chef-card h2,
+  .note-card h2 {
+    font-size: 1.45rem;
+  }
+
+  .about-notes {
+    padding: 2rem 0 4rem;
+  }
+
+  .notes-grid {
+    gap: 1.25rem;
+  }
+
+  .category-card,
+  .chef-card,
+  .note-card,
+  .visit-card,
+  .hours-card,
+  .footer-card,
+  .menu-cta-card {
+    transform: none !important;
   }
 
   .hours-list li {

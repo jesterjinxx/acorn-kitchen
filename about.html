@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,8 +18,7 @@
 
   <link
     href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
+    rel="stylesheet" />
 </head>
 
 <body>
@@ -35,12 +35,8 @@
         <li><a href="contact.html">Visit</a></li>
       </ul>
 
-      <a
-        href="https://www.toasttab.com/local/order/acorn-kitchen-3344-cass-rd"
-        class="order-btn"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a href="https://www.toasttab.com/local/order/acorn-kitchen-3344-cass-rd" class="order-btn" target="_blank"
+        rel="noopener noreferrer">
         Order Online
       </a>
     </nav>
@@ -54,13 +50,12 @@
         <div class="about-copy">
           <p class="stamp">Origin</p>
 
-<h1>
-  Proof that acorns occasionally become restaurants.
-</h1>
+          <h1>
+            Proof that acorns occasionally become restaurants.
+          </h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            fermentum, nibh at dapibus feugiat, lorem justo facilisis mi, non
-            tincidunt libero sapien at sem.
+            What began as a small idea, grew into a small kitchen, and then a small restaurant.
+            Acorn serves up a rotating menu of bold flavors and comfort food in Traverse City's Atomic Marketplace. It's a place for people who like to eat good food, have fun, and don't take themselves too seriously.
           </p>
         </div>
 
@@ -69,12 +64,15 @@
             <img src="assets/images/chefzach2.jpg" alt="Chef Zach of Acorn Kitchen" />
           </div>
 
-          <p class="card-number">Chef Notes</p>
+          <p class="stamp">Zachary Anderson</p>
           <h2>Chef Zach</h2>
 
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
-            risus vitae justo suscipit congue.
+            Zach didn't set out to build a restaurant empire. He just wanted to make really good food and share it with people. 
+            After years in professional kitchens, he opened Acorn Kitchen inside Atomic Marketplace as a home for bold flavors, 
+            comfort food, and whatever ideas keep him up at night. His approach is simple: cook things that sound 
+            delicious and don't overthink it. So far, it's working.
+
           </p>
         </div>
 
@@ -85,25 +83,98 @@
       <div class="container notes-grid">
 
         <article class="note-card">
-          <p class="card-number">Note 01</p>
-          <h2>Food first.</h2>
+          <p class="stamp">Kitchen Philosophy</p>
+          <h2>Follow the flavor</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            If an idea tastes good, we'll explore it. If it doesn't, we'll move on and pretend it never happened.
           </p>
         </article>
 
         <article class="note-card">
-          <p class="card-number">Note 02</p>
-          <h2>No corporate polish.</h2>
+          <p class="stamp">House Rule</p>
+          <h2>Keep it human.</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            We don't have a corporate handbook. We have conversations, curiosity, and a habit of making things because they sound delicious.
           </p>
         </article>
 
       </div>
     </section>
-
+   <section class="about-video">
+  <div class="container video-card">
+    <div class="video-copy">
+      <p class="stamp">Kitchen Window</p>
+      <h2>See the smash.</h2>
+      <p>
+        A vignette into the life of a smashburger. No narration. Just hot steel, good ingredients, and a kitchen doing what it does best.
+      </p>
+    </div>
+    <div class="video-frame">
+      <video id="burger-video" controls poster="assets/images/acorn-intro-poster.jpg">
+        <source src="assets/videos/acorn-intro.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</section> 
   </main>
+<footer class="site-footer" id="visit">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logos/acorn-wordmark-cream.png" alt="Acorn Kitchen" />
+        <p>Hip. Irreverent. Delicious.</p>
+      </div>
 
+      <div class="footer-card">
+        <p class="stamp">Hours</p>
+        <ul class="hours-list">
+          <li><span>Sunday</span><span>9 am – 4 pm</span></li>
+          <li><span>Monday</span><span>Closed</span></li>
+          <li><span>Tuesday</span><span>12 – 8 pm</span></li>
+          <li><span>Wednesday</span><span>12 – 8 pm</span></li>
+          <li><span>Thursday</span><span>12 – 8 pm</span></li>
+          <li><span>Friday</span><span>12 – 8 pm</span></li>
+          <li><span>Saturday</span><span>12 – 8 pm</span></li>
+        </ul>
+      </div>
+
+      <div class="footer-card">
+        <p class="stamp">Contact</p>
+
+        <p>
+          3344 Cass Rd<br />
+          Traverse City, Michigan
+        </p>
+
+        <p>
+          Phone: <a href="tel:+12312523034">231-252-3034</a>
+        </p>
+
+        <div class="footer-actions">
+          <a
+            href="https://www.toasttab.com/local/order/acorn-kitchen-3344-cass-rd"
+            class="btn btn-dark"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Order Online
+          </a>
+
+          <a
+            href="https://www.facebook.com/profile.php?id=61582968557086"
+            class="btn btn-paper"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Facebook
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
+<script>
+  const video = document.getElementById('burger-video');
+  video.volume = 0.5;
+</script>
 </html>

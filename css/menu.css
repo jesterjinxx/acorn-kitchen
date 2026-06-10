@@ -36,6 +36,7 @@
   max-width: 650px;
   margin-top: 1.5rem;
   padding: 1rem;
+  margin-right: 50px;
   background: var(--paper);
   color: var(--ink);
   border: var(--border);
@@ -131,6 +132,7 @@
 
   .menu-intro-card {
     max-width: 540px;
+    margin-right: auto;
   }
 
   .gallery-card,
