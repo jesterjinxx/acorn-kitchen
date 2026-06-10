@@ -80,7 +80,9 @@ h1 {
   transform: rotate(-1deg);
 }
 .about-video {
+  border-top: 2px solid rgba(247, 237, 216, 0.25);
   padding: 0 0 6rem;
+  padding-top: 3rem;
 }
 
 .video-card {
