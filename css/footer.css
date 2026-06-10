@@ -16,9 +16,7 @@
 
 .footer-brand img {
   width: 280px;
-  margin-bottom: 1.5rem;
-  filter: brightness(0) invert(1);
-  margin: 0 auto;
+  margin: 0 auto 1.5rem;
 }
 
 .footer-brand p {
