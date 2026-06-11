@@ -21,6 +21,18 @@
   padding: 1.5rem;
   box-shadow: 6px 6px 0 var(--cyan);
 }
+#note-1 {
+  box-shadow: 6px 6px 0 var(--cyan);
+}
+#note-2 {
+  box-shadow: 6px 6px 0 var(--pink);
+}
+#note-3 {
+  box-shadow: 6px 6px 0 var(--orange);
+}
+#note-4 {
+  box-shadow: 6px 6px 0 var(--olive);
+}
 
 .research-card:nth-child(1) {
   transform: rotate(-1deg);
