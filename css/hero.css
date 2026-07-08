@@ -69,7 +69,7 @@
 }
 
 .photo-note::before {
-  content: "SMASH BURGER";
+  content: "SMASHBURGER";
   display: block;
   margin-bottom: 0.5rem;
   color: var(--pink);
