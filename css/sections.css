@@ -32,6 +32,7 @@
 }
 #note-4 {
   box-shadow: 6px 6px 0 var(--olive);
+  
 }
 
 .research-card:nth-child(1) {
@@ -50,9 +51,33 @@
   transform: rotate(1deg);
 }
 
-.card-number {
+.card-number-1 {
+  color: var(--cyan);
   margin-bottom: 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.card-number-2 {
   color: var(--pink);
+  margin-bottom: 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.card-number-3 {
+  color: var(--orange);
+  margin-bottom: 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.card-number-4 {
+  color: var(--olive);
+  margin-bottom: 0.75rem;
   font-size: 0.75rem;
   font-weight: 900;
   letter-spacing: 0.08em;
