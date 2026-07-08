@@ -56,7 +56,7 @@ h1 {
 
 .chef-card p,
 .note-card p {
-  line-height: 1.7;
+  line-height: 1.4;
 }
 
 .about-notes {
@@ -115,6 +115,10 @@ h1 {
 .video-copy p {
   max-width: 55ch;
   line-height: 1.8;
+}
+p {
+  font-size: 1.3rem;
+  font-weight: 400;
 }
 @media (max-width: 900px) {
   .about-layout,
