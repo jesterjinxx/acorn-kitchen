@@ -128,7 +128,6 @@
 
 .facebook-frame {
   width: min(500px, 100%);
-  padding: 1rem;
   background: var(--paper);
   border: var(--border);
   box-shadow: 8px 8px 0 var(--cyan);
