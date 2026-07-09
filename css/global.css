@@ -170,7 +170,52 @@ p {
   overflow: hidden;
   background: var(--white);
 }
+.brunch-badge {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  left: 0.rem;
+  padding: 0.5rem 1rem;
+  background: var(--pink);
+  color: var(--white);
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  font-size: 0.45rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
 
+  box-shadow: 4px 4px 0 var(--cyan);
+  transform: rotate(1deg);
+}
+
+.brunch-badge::before,
+.brunch-badge::after {
+  position: absolute;
+  color: var(--white);
+  line-height: 1;
+  text-shadow: 1px 1px 1px var(--cyan);
+  pointer-events: none;
+  z-index: 2;
+  font-weight: 600;
+}
+
+.brunch-badge::before {
+  content: "✧";
+  top: -0.35rem;
+  left: -0.25rem;
+  font-size: 1rem;
+  transform: rotate(-18deg);
+}
+
+.brunch-badge::after {
+  content: "✦";
+  right: -0.5rem;
+  bottom: -0.45rem;
+  font-size: 0.95rem;
+  transform: rotate(18deg);
+}
 @media (max-width: 800px) {
   .split-section {
     grid-template-columns: 1fr;
