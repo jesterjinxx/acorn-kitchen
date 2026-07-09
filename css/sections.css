@@ -53,34 +53,89 @@
 
 .card-number-1 {
   color: var(--cyan);
-  margin-bottom: 0.75rem;
-  font-size: 0.75rem;
+  display: inline-block;
+  width: fit-content;
+
+  margin-bottom: 1rem;
+  padding: 0.35rem 0.65rem;
+
+  background: var(--cyan);
+  color: var(--ink);
+
+  border: var(--stamp-border);
+
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.25);
+
+  font-size: 0.72rem;
   font-weight: 900;
-  letter-spacing: 0.08em;
+
   text-transform: uppercase;
+  letter-spacing: 0.1em;
+
+  transform: rotate(-1.5deg);
 }
 .card-number-2 {
   color: var(--pink);
-  margin-bottom: 0.75rem;
-  font-size: 0.75rem;
+  display: inline-block;
+  width: fit-content;
+
+  margin-bottom: 1rem;
+  padding: 0.35rem 0.65rem;
+
+  background: var(--pink);
+  color: var(--ink);
+
+  border: var(--stamp-border);
+
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.25);
+
+  font-size: 0.72rem;
   font-weight: 900;
-  letter-spacing: 0.08em;
+
   text-transform: uppercase;
+  letter-spacing: 0.1em;
+
+  transform: rotate(-1.5deg);
 }
 .card-number-3 {
-  color: var(--orange);
-  margin-bottom: 0.75rem;
-  font-size: 0.75rem;
+  display: inline-block;
+  width: fit-content;
+
+  margin-bottom: 1rem;
+  padding: 0.35rem 0.65rem;
+
+  background: var(--orange);
+  color: var(--ink);
+
+  border: var(--stamp-border);
+
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.25);
+
+  font-size: 0.72rem;
   font-weight: 900;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  letter-spacing: 0.1em;
+
+  transform: rotate(-1.5deg);
 }
 .card-number-4 {
-  color: var(--olive);
-  margin-bottom: 0.75rem;
-  font-size: 0.75rem;
+  display: inline-block;
+  width: fit-content;
+
+  margin-bottom: 1rem;
+  padding: 0.35rem 0.65rem;
+
+  background: var(--olive);
+  color: var(--ink);
+
+  border: var(--stamp-border);
+
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.25);
+
+  font-size: 0.72rem;
   font-weight: 900;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
