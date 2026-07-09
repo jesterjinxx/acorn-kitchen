@@ -99,6 +99,15 @@ p {
   background: var(--paper);
   color: var(--ink);
 }
+.btn-cherry-order {
+  background: var(--cherry-dark);
+  color: var(--ink);
+}
+
+.btn-cherry-directions {
+  background: var(--paper);
+  color: var(--ink);
+}
 
 .stamp {
   display: inline-block;
