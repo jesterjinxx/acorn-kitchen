@@ -144,7 +144,9 @@
                 </div>
             </div>
         </section>
-        <footer class="site-footer" id="visit">
+
+    </main>
+    <footer class="site-footer" id="visit">
             <div class="container footer-grid">
 
                 <div class="footer-brand">
@@ -190,9 +192,52 @@
 
             </div>
         </footer>
+<div class="tourist-pop" id="touristPop" role="dialog" aria-label="Cherry Festival visitor options">
+  <button class="tourist-pop-close" id="touristPopClose" aria-label="Close">
+    ×
+  </button>
 
-    </main>
+  <p class="tourist-pop-kicker">In town for Cherry Festival?</p>
+  <h2>Take a break from the downtown scramble.</h2>
+  <p>
+   Burgers, shawarma, takeout, and Sunday brunch at Acorn Kitchen.
+  </p>
 
+  <div class="tourist-pop-actions">
+    <a
+      href="https://www.toasttab.com/local/order/acorn-kitchen-3344-cass-rd"
+      class="btn btn-dark"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Order Online
+    </a>
+
+    <a
+      href="https://www.google.com/maps/search/?api=1&query=3344+Cass+Rd+Traverse+City+MI"
+      class="btn btn-paper"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Get Directions
+    </a>
+  </div>
+</div>
+<script>
+  const touristPop = document.getElementById("touristPop");
+  const touristPopClose = document.getElementById("touristPopClose");
+
+  const dismissed = localStorage.getItem("acornTouristPopDismissed");
+
+  if (dismissed) {
+    touristPop.hidden = true;
+  }
+
+  touristPopClose.addEventListener("click", () => {
+    touristPop.hidden = true;
+    localStorage.setItem("acornTouristPopDismissed", "true");
+  });
+</script>
 </body>
 
 </html>
