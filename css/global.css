@@ -228,7 +228,7 @@ p {
   background: var(--paper);
   color: var(--ink);
   border: var(--border);
-  box-shadow: 6px 6px 0 var(--pink);
+  box-shadow: 6px 6px 0 var(--cherry);
 
   transform: rotate(-0.5deg);
 }
@@ -254,7 +254,7 @@ p {
 
 .tourist-pop-kicker {
   margin-bottom: 0.35rem;
-  color: var(--pink);
+  color: var(--cherry);
   font-size: 0.68rem;
   font-weight: 900;
   text-transform: uppercase;
