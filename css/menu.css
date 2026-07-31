@@ -142,6 +142,17 @@
   margin: 1rem auto;
   display: block;
 }
+.contact-info {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+}.contact-info a {
+  color: var(--ink);
+  text-decoration: underline;
+}
+.contact-info a:hover {
+  color: var(--orange);
+}
 .gallery-title {
   display: flex;
   align-items: center;
