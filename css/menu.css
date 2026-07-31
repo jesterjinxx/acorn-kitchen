@@ -120,7 +120,49 @@
 .menu-note p + p {
   margin-top: 0.5rem;
 }
+.menu-pdf {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.menu-pdf img {
+  width: 90%;
+  align-self: center;
+  margin: 0 auto;
+}
+.menu-pdf p {
+  margin: 0.5rem auto;
+  text-align: center;
+}
+.menu-pdf .stamp {
+  margin-bottom: 2rem;
+}
+.menu-pdf a {
+  margin: 1rem auto;
+  display: block;
+}
+.gallery-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 2.5rem 0 1.25rem;
+  padding-left: 0.75rem;
+  color: #fff7e8;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  border-left: 8px solid #e77a2b;
+}
 
+.gallery-title::after {
+  content: "";
+  flex: 1;
+  height: 4px;
+  background: #e77a2b;
+  box-shadow: 3px 3px 0 #3d203f;
+}
 @media (max-width: 950px) {
   .menu-hero {
     padding-top: 3rem;
