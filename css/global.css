@@ -225,14 +225,15 @@ p {
     right: 24px;
     bottom: 24px;
 
-    width: min(420px, calc(100vw - 32px));
+    width: min(380px, calc(100vw - 32px));
+    max-height: calc(100vh - 48px);
 
     background: #fff;
     border: 3px solid #111;
-
     box-shadow: 8px 8px 0 #111;
 
     z-index: 9999;
+    overflow: hidden;
 }
 
 .site-popup[hidden] {
@@ -242,7 +243,7 @@ p {
 .site-popup-close {
     position: absolute;
     top: 8px;
-    right: 10px;
+    right: 8px;
 
     width: 36px;
     height: 36px;
@@ -253,14 +254,13 @@ p {
 
     border: 2px solid #111;
     background: #fff;
-
     color: #111;
+
     font-size: 24px;
     font-weight: 700;
     line-height: 1;
 
     cursor: pointer;
-
     z-index: 2;
 }
 
@@ -271,23 +271,29 @@ p {
 
 .site-popup-image {
     display: block;
+
     width: 100%;
     height: auto;
+
+    /* Keep tall posters from taking over the screen */
+    max-height: calc(100vh - 130px);
+    object-fit: contain;
+
+    background: #111;
 }
 
 .site-popup-actions {
-    padding: 14px;
+    padding: 12px;
 }
 
 .site-popup-button {
     display: block;
     width: 100%;
 
-    padding: 14px 18px;
+    padding: 12px 18px;
 
     background: #111;
     color: #fff;
-
     border: 2px solid #111;
 
     font-family: inherit;
@@ -295,8 +301,6 @@ p {
     font-weight: 700;
     text-align: center;
     text-decoration: none;
-
-    cursor: pointer;
 }
 
 .site-popup-button:hover {
@@ -309,11 +313,17 @@ p {
 
 @media (max-width: 600px) {
     .site-popup {
-        right: 16px;
-        bottom: 16px;
-        width: calc(100vw - 32px);
+        right: 12px;
+        bottom: 12px;
+
+        width: min(340px, calc(100vw - 24px));
+        max-height: calc(100vh - 24px);
 
         box-shadow: 5px 5px 0 #111;
+    }
+
+    .site-popup-image {
+        max-height: calc(100vh - 115px);
     }
 }
 @media (max-width: 800px) {
