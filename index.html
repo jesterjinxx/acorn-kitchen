@@ -251,49 +251,47 @@
 
         </div>
     </footer>
-    <!-- POPUP 
-    <div class="tourist-pop" id="touristPop" role="dialog" aria-label="Cherry Festival visitor options">
-        <button class="tourist-pop-close" id="touristPopClose" aria-label="Close">
-            ×
-        </button>
+    <!-- SITE POPUP -->
+<div class="site-popup" id="sitePopup" role="dialog" aria-label="Featured event">
 
-        <p class="tourist-pop-kicker">In town for Cherry Festival?</p>
-        <h2>Take a break from the downtown scramble.</h2>
-        <p>
-            Burgers, shawarma, takeout, and Sunday brunch at Acorn Kitchen.
-        </p>
+    <button class="site-popup-close" id="sitePopupClose" aria-label="Close popup">
+        ×
+    </button>
 
-        <div class="tourist-pop-actions">
-            <a href="https://www.toasttab.com/local/order/acorn-kitchen-3344-cass-rd" class="btn btn-cherry-order"
-                target="_blank" rel="noopener noreferrer">
-                Order Online
-            </a>
+    <img
+        src="assets/images/acornshow.jpg"
+        alt="Acorn Kitchen featured event"
+        class="site-popup-image"
+    >
 
-            <a href="https://www.google.com/maps/search/?api=1&query=3344+Cass+Rd+Traverse+City+MI"
-                class="btn btn-cherry-directions" target="_blank" rel="noopener noreferrer">
-                Get Directions
-            </a>
-        </div>
+    <div class="site-popup-actions">
+        <a
+            href="https://www.eventbrite.com/e/one-be-lo-blueprint-marv-won-skin-kwon-doe-malaki-the-most-hi-more-tickets-1996638290876"
+            class="site-popup-button"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Get Tickets
+        </a>
     </div>
-    -->
-    
-    <!-- POPUP SCRIPT 
-    <script>
-        const touristPop = document.getElementById("touristPop");
-        const touristPopClose = document.getElementById("touristPopClose");
 
-        const dismissed = localStorage.getItem("acornTouristPopDismissed");
+</div>
 
-        if (dismissed) {
-            touristPop.hidden = true;
-        }
+<script>
+    const sitePopup = document.getElementById("sitePopup");
+    const sitePopupClose = document.getElementById("sitePopupClose");
 
-        touristPopClose.addEventListener("click", () => {
-            touristPop.hidden = true;
-            localStorage.setItem("acornTouristPopDismissed", "true");
-        });
-    </script>
-    --> 
+    const popupDismissed = sessionStorage.getItem("acornSitePopupDismissed");
+
+    if (popupDismissed) {
+        sitePopup.hidden = true;
+    }
+
+    sitePopupClose.addEventListener("click", () => {
+        sitePopup.hidden = true;
+        sessionStorage.setItem("acornSitePopupDismissed", "true");
+    });
+</script>
 </body>
 
 </html>
