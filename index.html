@@ -250,6 +250,82 @@
 
         </div>
     </footer>
+    <!-- BEER DINNER POPUP -->
+<div class="site-popup-overlay" id="site-popup-overlay" hidden>
+  <div
+    class="site-popup"
+    id="site-popup"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Beer Dinner Event"
+  >
+    <button
+      class="site-popup-close"
+      id="site-popup-close"
+      aria-label="Close popup"
+      type="button"
+    >
+      &times;
+    </button>
+
+    <!-- Replace with your beer dinner poster -->
+    <img
+      src="./assets/images/BeerDinnerAd.jpg"
+      alt="Beer Dinner at Nocturnal Bloom"
+      class="site-popup-image"
+    >
+
+    <div class="site-popup-actions">
+      <!-- Replace the URL with your ticket purchase destination -->
+      <a
+        href="YOUR-TICKET-LINK"
+        class="site-popup-button"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Get Tickets
+      </a>
+    </div>
+  </div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const overlay = document.getElementById("site-popup-overlay");
+  const closeButton = document.getElementById("site-popup-close");
+
+  if (!overlay || !closeButton) return;
+
+  const popupKey = "beer-dinner-popup-dismissed";
+
+  // Show popup unless already dismissed during this session
+  if (!sessionStorage.getItem(popupKey)) {
+    overlay.hidden = false;
+  }
+
+  // Close popup
+  function closePopup() {
+    overlay.hidden = true;
+    sessionStorage.setItem(popupKey, "true");
+  }
+
+  // Close button
+  closeButton.addEventListener("click", closePopup);
+
+  // Close when clicking outside the popup
+  overlay.addEventListener("click", (event) => {
+    if (event.target === overlay) {
+      closePopup();
+    }
+  });
+
+  // Close with Escape key
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && !overlay.hidden) {
+      closePopup();
+    }
+  });
+});
+</script>
 </body>
 
 </html>
