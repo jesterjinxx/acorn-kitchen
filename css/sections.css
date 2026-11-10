@@ -205,51 +205,27 @@
   border-top: 2px solid rgba(247, 237, 216, 0.25);
   border-bottom: 2px solid rgba(247, 237, 216, 0.25);
 }
-/*
-.facebook-frame {
+.social-card {
   width: min(500px, 100%);
+  padding: 1.5rem;
   background: var(--paper);
+  color: var(--ink);
   border: var(--border);
   box-shadow: 8px 8px 0 var(--cyan);
   transform: rotate(-1deg);
 }
 
-.facebook-frame iframe {
-  display: block;
-  width: 100%;
-  max-width: 500px;
-  background: white;
-}*/
-.facebook-frame {
-  width: min(500px, 100%);
-  padding: 0.75rem;
-  background: var(--paper);
-  border: var(--border);
-  box-shadow: 8px 8px 0 var(--cyan);
-  overflow: hidden;
-  justify-self: end;
+.social-card p {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  font-weight: 600;
 }
 
-.facebook-frame iframe {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  height: 520px;
-  border: none;
-  background: white;
+.social-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
 }
-/*
-@media (max-width: 900px) {
-  .research-grid,
-  .split-section {
-    grid-template-columns: 1fr;
-  }
-
-  .research-card {
-    transform: none !important;
-  }
-}
-*/
 @media (max-width: 900px) {
   .research-grid,
   .split-section {
@@ -260,17 +236,6 @@
     transform: none !important;
   }
 
-  .facebook-frame {
-    justify-self: stretch;
-    width: 100%;
-    max-width: 500px;
-    margin-inline: auto;
-  }
-
-  .facebook-frame iframe {
-    width: 100%;
-    height: 520px;
-  }
 }
 @media (max-width: 650px) {
   .visit-box {
