@@ -146,7 +146,7 @@ p {
 .feed-section h2 {
   max-width: 9ch;
 }
-
+/*
 .facebook-frame {
   width: 100%;
   max-width: 520px;
@@ -170,6 +170,7 @@ p {
   overflow: hidden;
   background: var(--white);
 }
+*/
 .brunch-badge {
   position: relative;
   display: inline-flex;
@@ -346,6 +347,7 @@ p {
         max-height: calc(100vh - 115px);
     }
 }
+/*
 @media (max-width: 800px) {
   .split-section {
     grid-template-columns: 1fr;
@@ -357,6 +359,7 @@ p {
     transform: none;
   }
 }
+  */
 @media (max-width: 650px) {
   h1 {
     font-size: clamp(2.5rem, 13vw, 4rem);
